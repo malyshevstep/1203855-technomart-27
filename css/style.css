@@ -1,0 +1,642 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cuprum', 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    color:black;
+    background: white;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+/* Общие параметры */
+
+.incognito {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Логотип */
+
+.shop-logo {
+    display: flex;
+    width: 220px;
+    height: 42px;
+    background-color: #ee3643;
+    box-shadow: 0 5px 0 0 #b52933;
+    margin-left: 130px;
+    text-align: center;
+}
+
+.shop-logo img {
+    margin: auto;
+}
+
+.shop-logo:hover {
+    background-color: #ca2c37;
+}
+.shop-logo:active {
+    background:#ba2732;
+}
+
+
+/* Header top */
+
+.header-top {
+    display: flex;
+    background-color: #293449;
+    height: 42px;
+}
+
+/* Поиск */
+
+.header-search {
+    display:flex;
+    width: 270px;
+    background-color: #293449;
+    color: #fff;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 17px;
+}
+
+::-webkit-input-placeholder {color:#ffffff;}
+::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#ffffff;}
+
+
+.header-search input {
+    background-color: #293449;
+    border: none;
+    width: 270px;
+}
+
+.header-search input:hover {
+    background: #212a3a;
+    border:none;
+}
+
+.header-search img {
+    margin-top: 12px;
+    margin-right: 3px;
+    margin-bottom: 13px;
+}
+
+/*Ссылки в шапке */
+
+.header-top ul {
+    display: flex;
+    align-items: center;
+    margin-left: 17px;
+    padding: 0;
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.header-top li { 
+   display: flex;
+   align-items: center;
+   width: 152px;
+   height: 42px;
+}
+
+.header-top-menu img {
+    margin-right: 13px;
+}
+
+.make-order {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    background-color: #63a63e;
+    width: 150px;
+    min-height: 42px;
+    height: 42px;
+    justify-content: center;
+}
+.make-order:hover {
+    background:#5fbb2d;
+}
+.make-order:active{
+    background:#518534;
+}
+
+
+/*header-info */
+
+.header-info .info-title {
+    font-size: 16px; 
+    font-style: italic;
+    line-height: 23px;
+    color: #ee3643;
+    width: 196px;
+    height: 60px;
+    display: inline;
+}
+
+.contacts-title .footer-number {
+    font-size: 21px;
+    line-height: 21px;
+    color: #ee3643;
+    width: 144px;
+    height: 21px;
+}
+
+.contacts-title .footer-adress {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #32425c;
+    width: 260px;
+    height: 13px;
+}
+
+.cite-login {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+}
+
+/* header-bottom */
+
+.header-bottom {
+    font-size: 17px;
+    color: white;
+    background-color: #32425c;
+    height: 60px;
+    box-shadow: 0 5px 0 0 #293449;
+    
+}
+
+.header-bottom li {
+    display: inline-block;
+    margin: 0 49px;
+    margin-top: 22px;
+    margin-bottom: 21px;
+    width: 127px;
+    height: 60px;
+}
+
+.header-bottom li:hover {
+    background-color: #293449;
+}
+
+/* Main */
+
+h3.blocks-title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align:left;
+    color: #ffffff;
+}
+
+.blocks-promo {
+    background-color: black;
+    opacity: 0.1;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    width: 135px;
+    height: 38px;
+}
+
+.slider-drills {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    color: white
+}
+
+.slider p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff
+}
+
+.slider a {
+    width: 220px;
+    height: 38px;
+    font-size: 14px;
+    background-color: #ee3643;
+    color:#ffffff;
+    float: left;
+    text-align: center;
+    padding-top: 14px;
+}
+
+.pop-goods h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c
+}
+
+.pop-goods-all {
+    width: 253px;
+    height: 38px;
+    font-size: 14px;
+    background-color: #ee3643;
+    color:#ffffff;
+    float: left;
+    text-align: center;
+    padding-top: 14px;
+}
+
+.pop-name, .pop-firm {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #a9a9a9;
+}
+
+.famousmanufactures h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c
+}
+
+.famousmanufacturesall {
+    width: 253px;
+    height: 38px;
+    font-size: 14px;
+    background-color: #ee3643;
+    color:#ffffff;
+    float: left;
+    text-align: center;
+    padding-top: 14px;
+}
+
+.ourservices h2 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.ourservices p {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.ourservices h3 {
+    font-size: 36px;
+    line-height: 36px;
+    color: #32425c;
+}
+
+.inquiry-button {
+    width: 195px;
+    height: 38px;
+    font-size: 14px;
+    background-color: #ee3643;
+    color:#ffffff;
+    float: left;
+    text-align: center;
+    padding-top: 14px;
+}
+
+ .about-us h2 {
+    font-size:30px;
+    color:#000000;
+    font-family: "Cuprum", "Arial", sans-serif;
+}
+.about-us p {
+    font-size:13px;
+    font-family: "PTSans", "Arial", sans-serif;
+}
+.company-list li {
+    font-size: 18px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-weight: normal;
+    line-height: 1.11;
+}
+.button-about {
+    width: 220px;
+    height: 38px;
+    font-size: 14px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    background-color: #ee3643;
+    color:#ffffff;
+    float:left;
+    text-align: center;
+    padding-top:14px;
+    border-radius: 4px;
+}
+.button-about a {
+    font-size:14px;
+    padding-top:14px;
+}
+
+.contacts-main h2 {
+    font-size:30px;
+    font-family: "Cuprum", "Arial", sans-serif;
+}
+.contacts-main p {
+    font-size: 13px;
+    font-family: "PTSans", "Arial", sans-serif;
+    text-align: left;
+}
+.feedback-us {
+    width:300px;
+    height: 38px;
+    background-color: #ee3643;
+    color:#ffffff;
+    font-size: 14px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    padding-top:14px;
+    float:right;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+/*Footer */
+
+.footer-up {
+    width:100%;
+    height:197px;
+    background-color: #32425c;
+}
+.footer-info {
+    font-family: "Cuprum", "Arial", sans-serif;
+    color:#ffffff;
+    font-size: 18px;
+}
+.bottom-nav li{
+    display: inline-block;
+    font-family: "Cuprum", "Arial", sans-serif;
+    color:#f1f5f7;
+}
+.bottom-nav-2 li{
+    display: inline-block;
+    font-family: "Cuprum", "Arial", sans-serif;
+    color:#ffd180;
+}
+
+/*Оформление нижней части футера */
+.dark-bottom {
+    width:100%;
+    height: 107px;
+    background-color:#293449;
+}
+.copyright {
+    font-family: "Cuprum", "Arial", sans-serif;
+    color:#ffffff;
+    font-size: 16px;
+}
+.feedback {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    color:#ffffff;
+}
+.gold-text {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    color:#ffd180;
+}
+.feedback a:hover {
+    text-decoration: underline;
+}
+
+/* Разметка каталога */
+
+.breadcrumbs-list li {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.hammer-drills {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    background-color: #f2f6f8;
+}
+
+.filter-title {
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: left;
+}
+
+.filter-block {
+    background-color: #f7f3ec;
+    width: 700px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 370 auto;
+}
+
+.label-title {
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: dotted;
+}
+
+.label-title:hover {
+    color: black;
+}
+
+.lable-title:active {
+    color: #ee3643;
+}
+
+/* Фильтр в левой части каталога */
+
+.filter-left {
+    text-transform: uppercase;
+}
+
+.filter-left ul {
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    padding: none;
+}
+
+.filter-sort {
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #000000;
+}
+
+.show {
+  width: 140px;
+  height: 38px;
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+  font-size: 13px;
+  font-family: "PTSans", "Arial", sans-serif;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* Карточки товаров */
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 706px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    margin-left: 371px;
+    list-style: none;
+  }
+  
+  .catalog-item {
+    width: 220px;
+    height: 318px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border: solid 1px #e5e5e5;
+  }
+  .catalog-item span {
+      width: 155px;
+      height: 33px;
+      font-family: "PTSans", "Arial", sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 20px;
+  }
+
+  .catalog-item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .new-price {
+    background-image: url('../img/red-button.svg');
+    width: 141px;
+    height: 38px;
+    object-fit: contain;
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 35px;
+    color: #ffffff;
+    margin: auto;
+  }
+
+  .new-price:nth-child(3n) {
+      margin-top: 50px;
+  }
+
+  /* Пагинация */
+
+.pagination-list {
+    display: flex;
+    margin-left: 370px;
+
+}
+
+.pagination-list li {
+    width: 38px;
+    height: 38px;
+    border: solid 1px #e5e5e5;
+    background-color: #ffffff;
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 38px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.pagination-list li:last-child {
+    width: 140px;
+    height: 38px;
+    text-transform: uppercase;
+}
+
+.pagination-list li:hover {
+    border: solid 1px #bdc6ca;
+}
+
+.pagination-list li:active {
+    border: solid 1px #ee3643;
+}
+
+  /* Перед футером */
+
+.epilogue {
+    height: 261px;
+    background-color: #f4f7f9;
+}
+
+.few-words {
+    margin-left: 130px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-top: 67px;
+}
+
+.about-drills {
+    margin-left: 130px;
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+    padding-bottom: 73px;
+}
+  
+
+
