@@ -118,7 +118,6 @@ showSlides(slideIndex);
 function plusSlide() {
     showSlides(slideIndex += 1);
 }
-хъ
 /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
 function minusSlide() {
     showSlides(slideIndex -= 1);  
