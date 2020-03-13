@@ -2340,10 +2340,11 @@ article.filter-first {
 
 .first-filter {
   margin-bottom: 21px;
+  margin-top: 16px;
 }
 
 .line-1 {
-  margin-bottom: 8px;
+  margin-top: 25px;
 
   border: 1px solid #e5e5e5;
   border-bottom-width: 0;
