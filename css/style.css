@@ -58,8 +58,7 @@ a {
   background: #ba2732;
 }
 
-
-/* Header top */
+/* Верхняя часть шапки */
 
 .header-top {
   display: flex;
@@ -283,7 +282,7 @@ label.search-icon {
 /* Фикс для IE 11 */
 
 .header-middle:after {
-  content: '';
+  content: "";
   min-height: inherit;
   font-size: 0;
 }
@@ -1902,7 +1901,7 @@ a.user-profile:active {
 
 a.user-profile::before {
   position: absolute;
-  content: '';
+  content:"" ;
   left: 14px;
   width: 20px;
   height: 18px;
@@ -1912,7 +1911,7 @@ a.user-profile::before {
 
 a.user-profile:hover::before {
   position: absolute;
-  content: '';
+  content: "";
   left: 14px;
   width: 20px;
   height: 18px;
@@ -1922,7 +1921,7 @@ a.user-profile:hover::before {
 
 a.user-logout::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 16px;
   right: 10px;
   width: 21px;
@@ -1933,7 +1932,7 @@ a.user-logout::after {
 
 a.user-logout:hover::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 16px;
   right: 10px;
   width: 20px;
@@ -2087,7 +2086,7 @@ a.user-logout:hover::after {
 
 .hammer-drills h2 {
   width: 168px;
-  height: 23px;
+  min-height: 23px;
   margin-left: 28px;
   margin-top: 19px;
 
